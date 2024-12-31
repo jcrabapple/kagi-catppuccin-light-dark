@@ -1,0 +1,31 @@
+name: Sync Repositories
+
+on:
+  # Triggers the workflow on push events
+  push:
+    branches: [ "main" ]  # Adjust this to your main branch name
+  # Allows manual trigger from Actions tab
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add Remote Repository
+        run: |
+          git remote add upstream ${{ secrets.UPSTREAM_REPO_URL }}
+          git fetch upstream
+
+      - name: Sync Repository
+        run: |
+          git checkout main  # Adjust this to your main branch name
+          git merge upstream/main
+          git push origin main
+
+    permissions:
+      contents: write
