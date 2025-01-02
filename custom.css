@@ -435,3 +435,15 @@ background: var(--primary-g-6);
 .k_ui_toggle_switch.--mini .k_ui_toggle_switch_bar {
 --border-color: var(--primary-g-6);
 }
+input[type="date"] {
+  color: var(--primary-600) !important;
+}
+.sidebar-filter-nav-form .sidebar-filter-nav > .filter-item .dd-list li:hover {
+  color: unset !important;
+}
+.dropdown .dd-list .checked.inner-label:hover {
+  color: var(--crust) !important;
+}
+.dropdown .dd-list .inner-label:hover {
+  color: var(--crust);
+}
