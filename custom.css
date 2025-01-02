@@ -447,3 +447,9 @@ input[type="date"] {
 .dropdown .dd-list .inner-label:hover {
   color: var(--crust);
 }
+.k_ui_dropdown_data_list .list_items > div:hover {
+  background-color: unset !important;
+  color: unset !important;
+  outline: none;
+  text-decoration: none;
+}
