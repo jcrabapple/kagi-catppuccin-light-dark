@@ -453,3 +453,9 @@ input[type="date"] {
   outline: none;
   text-decoration: none;
 }
+#uploadedItems .item .type, #uploadedItems .item .icon, #uploadedItems .item .name {
+  color: var(--crust);
+}
+#form .uploadLabel:hover {
+  color: var(--crust);
+}
