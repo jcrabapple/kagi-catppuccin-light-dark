@@ -459,3 +459,6 @@ input[type="date"] {
 #form .uploadLabel:hover {
   color: var(--crust);
 }
+.POI-item-back .text {
+  color: var(--crust);
+}
