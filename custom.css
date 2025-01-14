@@ -462,3 +462,6 @@ input[type="date"] {
 .POI-item-back .text {
   color: var(--crust);
 }
+.k-tooltip {
+  background-color: var(--primary-100);
+}
