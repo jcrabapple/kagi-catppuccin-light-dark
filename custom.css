@@ -465,3 +465,8 @@ input[type="date"] {
 .k-tooltip {
   background-color: var(--primary-100);
 }
+
+/* OPTIONAL disable underline on title links in search result
+.__sri-title .__sri_title_link {
+  border-bottom: none;
+} */
