@@ -480,6 +480,12 @@ header {
 .prompt-options button:hover {
     background-color: unset !important;
 }
+#chat_box .chat_bubble .actions [data-action]:is(a,button):hover {
+    background: var(--surface1);
+}
+#dictation-button:hover {
+    color: var(--crust);
+}
 
 /* OPTIONAL disable underline on title links in search result
 .__sri-title .__sri_title_link {
