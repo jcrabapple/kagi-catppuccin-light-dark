@@ -471,6 +471,15 @@ input[type="date"] {
 .land_tooltip_message .kb_key {
   color: var(--crust) !important;
 }
+header {
+    background: var(--crust) !important;
+}
+.prompt-options label:hover {
+    background-color: unset !important;
+}
+.prompt-options button:hover {
+    background-color: unset !important;
+}
 
 /* OPTIONAL disable underline on title links in search result
 .__sri-title .__sri_title_link {
