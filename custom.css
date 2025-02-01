@@ -488,6 +488,10 @@ header {
     background-color: unset !important;
 }
 
+#popover-privacy > p:nth-child(3) > span > i {
+  color: var(--crust) !important;
+}
+
 /* OPTIONAL disable underline on title links in search result
 .__sri-title .__sri_title_link {
   border-bottom: none;
