@@ -295,12 +295,6 @@
   justify-content:space-between;
   width:100%;
 }
-#promptBoxButtonsGroup {
-    border: 2px solid var(--primary-25) !important;
-    padding: 0px !important;
-    border-radius: 999px !important;
-    margin-top: 5px !important;
-}
 }
 
 /* Desktop CSS */
@@ -501,15 +495,6 @@ header {
   color: var(--crust) !important;
 }
 
-#promptBoxButtonsGroup {
-    border: 2px solid var(--primary-25);
-    padding: 10px;
-    border-radius: 999px;
-}
-
-.buttons-left {
-    padding: 10px;
-}
 
 /* OPTIONAL disable underline on title links in search result
 .__sri-title .__sri_title_link {
