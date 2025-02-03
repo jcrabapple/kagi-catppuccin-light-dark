@@ -238,29 +238,12 @@
   --icon-purple: var(--sky);
 }
 
-.k_ui_dropdown_data_list .list_items > ._0_k_ui_dropdown_li:hover {
-  background-color: var(--surface2) !important; /* Darker background */
-  /* Optionally, keep the original text color or slightly lighten it if needed */
-  /* color: var(--text); */ 
-}
-
-div.sidebar-box {
-  background-color: var(--mantle) !important; /* Darker background for sidebar-box */
-}
-
-.thread-list > li:is(.active, :hover, :focus-within) {
-  background-color: var(--surface1) !important; /* Darker background for active, hover, and focus-within states */
-}
-
-.bg-p-50 {
-  background-color: var(--primary-50); /* Or whichever color you currently have set */
-}
-
 /* Media query for mobile devices */
-@media (max-width: 767px) {
-  .bg-p-50 {
+
+@media all and (max-device-width: 766px) {
+.bg-p-50 {
     background-color: var(--surface0); /* Use a darker color on mobile */
-  }
+}
 .landing-category-select .landing_cat_buttons > button.--active {
   align-items: center;
   border: 1px solid var(--primary-400);
@@ -312,6 +295,32 @@ div.sidebar-box {
   justify-content:space-between;
   width:100%;
 }
+#promptBoxButtonsGroup {
+    border: 2px solid var(--primary-25) !important;
+    padding: 0px !important;
+    border-radius: 999px !important;
+    margin-top: 5px !important;
+}
+}
+
+/* Desktop CSS */
+
+.k_ui_dropdown_data_list .list_items > ._0_k_ui_dropdown_li:hover {
+  background-color: var(--surface2) !important; /* Darker background */
+  /* Optionally, keep the original text color or slightly lighten it if needed */
+  /* color: var(--text); */ 
+}
+
+div.sidebar-box {
+  background-color: var(--mantle) !important; /* Darker background for sidebar-box */
+}
+
+.thread-list > li:is(.active, :hover, :focus-within) {
+  background-color: var(--surface1) !important; /* Darker background for active, hover, and focus-within states */
+}
+
+.bg-p-50 {
+  background-color: var(--primary-50); /* Or whichever color you currently have set */
 }
 
 .dropdown .dd-list ._0_list_items li:hover {
@@ -490,6 +499,16 @@ header {
 
 #popover-privacy > p:nth-child(3) > span > i {
   color: var(--crust) !important;
+}
+
+#promptBoxButtonsGroup {
+    border: 2px solid var(--primary-25);
+    padding: 10px;
+    border-radius: 999px;
+}
+
+.buttons-left {
+    padding: 10px;
 }
 
 /* OPTIONAL disable underline on title links in search result
