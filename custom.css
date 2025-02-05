@@ -518,6 +518,10 @@ header {
 #prompt-box {
   border-top: 2px solid var(--peach);
 }
+:focus-visible {
+    border-radius: 5px;
+    outline: 3px solid var(--peach);
+}
 
 
 /* OPTIONAL disable underline on title links in search result
