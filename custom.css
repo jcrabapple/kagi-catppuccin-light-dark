@@ -494,6 +494,30 @@ header {
 #popover-privacy > p:nth-child(3) > span > i {
   color: var(--crust) !important;
 }
+.main-center-box>* {
+    margin-inline: auto;
+    max-width: 850px;
+    padding-inline: 16px;
+    width: 100%;
+}
+#chat_box > div:nth-child(1) {
+  background-color: var(--surface0);
+  padding: 20px;
+  border: 2px solid var(--overlay0);
+  border-radius: 25px;
+}
+.chat_bubble {
+    padding-block: 32px;
+    position: relative;
+    border: 2px solid var(--overlay0);
+    border-radius: 25px;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: var(--crust);
+}
+#prompt-box {
+  border-top: 2px solid var(--peach);
+}
 
 
 /* OPTIONAL disable underline on title links in search result
