@@ -500,11 +500,11 @@ header {
     padding-inline: 16px;
     width: 100%;
 }
-#chat_box > div:nth-child(1) {
-  background-color: var(--surface0);
-  padding: 20px;
-  border: 2px solid var(--overlay0);
-  border-radius: 25px;
+#chat_box > div:nth-child(1), [aria-label="You said:"] {
+  background-color: var(--surface0) !important;
+  padding: 20px !important;
+  border: 2px solid var(--overlay0) !important;
+  border-radius: 25px !important;
 }
 .chat_bubble {
     padding-block: 32px;
