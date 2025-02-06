@@ -295,6 +295,12 @@
   justify-content:space-between;
   width:100%;
 }
+.search-result, .sri-group {
+    border-bottom: unset !important;
+}
+.inline-content+.search-result, .inline-content+.sri-group {
+    border-top: unset !important;
+}
 }
 
 /* Desktop CSS */
@@ -524,7 +530,7 @@ header {
 }
 
 
-/* OPTIONAL disable underline on title links in search result
+/* OPTIONAL disable underline on title links in search result */
 .__sri-title .__sri_title_link {
   border-bottom: none;
-} */
+}
