@@ -558,7 +558,10 @@ header {
 }
 :focus-visible {
     border-radius: 5px;
-    outline: 3px solid var(--peach);
+    outline: 2px solid var(--peach);
+}
+.s-f-w.--active .search_area {
+    padding: 10px !important;
 }
 
 
