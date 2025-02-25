@@ -572,7 +572,12 @@ header {
     gap: 8px !important;
     flex-direction: row !important;
 }
-
+#thread-sidebar-collapse:hover {
+    color: var(--crust);
+}
+header .header-btn:hover {
+    color: var(--crust);
+}
 
 /* OPTIONAL disable underline on title links in search result */
 .__sri-title .__sri_title_link {
