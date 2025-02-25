@@ -578,6 +578,9 @@ header {
 header .header-btn:hover {
     color: var(--crust);
 }
+.promptOptionsSelector .custom-assistants li.option, .promptOptionsSelector .default-assistants li.option {
+    color: var(--text);
+}
 
 /* OPTIONAL disable underline on title links in search result */
 .__sri-title .__sri_title_link {
