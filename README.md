@@ -2,6 +2,8 @@
 
 Copy and paste the contents of custom.css into the Custom CSS box in your Kagi appearance settings.
 
+If you enjoy this theme and would like to buy me a coffee, you can do so via my [Kofi page](https://ko-fi.com/jcrabapple).
+
 # Color Palettes
 
 Your theme will change between light (**Catppuccin Latte**) and dark (**Catpuccin Mocha**) based on your browser/system settings, and via the toggle in the Kagi sidebar. Dark (Mocha) is the default.
