@@ -4,7 +4,7 @@ Copy and paste the contents of custom.css into the Custom CSS box in your Kagi a
 
 # Color Palettes
 
-Your theme will change between light (**Catppuccin Latte**) and dark(**Catpuccin Mocha**) based on your browser and/or system settings.
+Your theme will change between light (**Catppuccin Latte**) and dark (**Catpuccin Mocha**) based on your browser/system settings, and via the toggle in the Kagi sidebar. Dark (Mocha) is the default.
 
 ## Catppuccin Latte Palette
 
