@@ -1,23 +1,23 @@
 /* Catppuccin Theme for Kagi - With Theme Class Support */
 
-/* Core variables - Dark theme (Mocha) is default */
-:root, .theme_moon_dark {
-  /* Catppuccin Mocha colors */
-  --rosewater: #f5e0dc; --flamingo: #f2cdcd; --pink: #f5c2e7; --mauve: #cba6f7;
-  --red: #f38ba8; --maroon: #eba0ac; --peach: #fab387; --yellow: #f9e2af;
-  --green: #a6e3a1; --teal: #94e2d5; --sky: #89dceb; --sapphire: #74c7ec;
-  --blue: #89b4fa; --lavender: #b4befe; --text: #cdd6f4; --subtext1: #bac2de;
-  --subtext0: #a6adc8; --overlay2: #9399b2; --overlay1: #7f849c; --overlay0: #6c7086;
-  --surface2: #585b70; --surface1: #45475a; --surface0: #313244; --base: #1e1e2e;
-  --mantle: #181825; --crust: #11111b;
+/* Core variables - Light theme (Latte) is default */
+:root {
+  /* Catppuccin Latte colors */
+  --rosewater: #dc8a78; --flamingo: #dd7878; --pink: #ea76cb; --mauve: #8839ef;
+  --red: #d20f39; --maroon: #e64553; --peach: #fe640b; --yellow: #df8e1d;
+  --green: #40a02b; --teal: #179299; --sky: #04a5e5; --sapphire: #209fb5;
+  --blue: #1e66f5; --lavender: #7287fd; --text: #4c4f69; --subtext1: #5c5f77;
+  --subtext0: #6c6f85; --overlay2: #7c7f93; --overlay1: #8c8fa1; --overlay0: #9ca0b0;
+  --surface2: #acb0be; --surface1: #bcc0cc; --surface0: #ccd0da; --base: #eff1f5;
+  --mantle: #e6e9ef; --crust: #dce0e8;
 
-  /* Set dark mode scheme and core UI variables */
-  --color-scheme: dark;
-  --app-bg: var(--base); --app-text: var(--text); --header-bg: var(--app-bg);
+  /* Set light mode scheme and core UI variables */
+  --color-scheme: light;
+  --app-bg: var(--base); --app-text: var(--text); --header-bg: var(--crust);
   --app-frame-bg: var(--app-bg); --landing-bg: var(--app-bg);
   --app-bg-opac: rgba(30, 30, 46, 0); --bottom-bar-bg: var(--yellow);
   --white: var(--text);
-  
+    
   /* Derived color mappings */
   --graphite: var(--base); --graphite-25: var(--overlay2); --graphite-50: var(--flamingo);
   --graphite-70: var(--pink); --graphite-100: var(--mauve); --graphite-200: var(--red);
@@ -69,7 +69,7 @@
   /* Inputs and buttons */
   --color-search-input-border: var(--mauve); --color-search-input: var(--base);
   --color-search-input-opac: var(--app-bg-opac); --color-danger: var(--red);
-  --input-bg: var(--app-bg); --btn-primary-bg: var(--text); --btn-primary-text: var(--base);
+  --input-bg: var(--app-bg); --btn-primary-bg: var(--mauve); --btn-primary-text: var(--crust);
   --btn-primary-color: var(--base); --btn-group-bg: var(--base);
   
   /* Navigation */
@@ -122,7 +122,7 @@
   --doggo-color-1: var(--text); --doggo-bg-color: var(--app-bg); --doggo-stroke-color: var(--maroon);
   --landing-page-clouds-opacity: 1; --quick-search-bg: var(--text); --quick-search-icon: var(--base);
   --app-logo: var(--text); --app-logo-bg: var(--yellow); --filters-clear-btn-icon: var(--maroon);
-  --filter-dd-bg: var(--surface2); --k-tooltip-bg: rgba(30, 30, 46, .9);
+  --filter-dd-bg: var(--surface2); --k-tooltip-bg: rgba(220, 224, 232, 0.9);
   --k-tooltip-text: var(--text); --dd-hover-bg: var(--mauve); --dd-hover-color: var(--text);
   --dd-list-input-bg: var(--input-bg); --not-found-bubble-bg: var(--surface1);
   --site_info_bg: var(--app-bg); --site_info_bottom_bg: var(--kagi-accent);
@@ -133,57 +133,57 @@
   --code-p: var(--text); --background-color-sky: var(--sky);
   
   /* Form elements */
-  --checkbox-bg: var(--yellow); --checkbox-check: var(--base); --as-dd-border: var(--app-bg);
+  --checkbox-bg: var(--mauve); --checkbox-check: var(--crust); --as-dd-border: var(--app-bg);
   --dd-list-input-bg: var(--base); --icon-purple: var(--sky);
   
   /* Onboarding elements */
-  --onboarding_theme_options_dark_visibility: flex; --onboarding_theme_options_light_visibility: none;
-  --onb_theme_light_preview_box: none; --onb_theme_calm_blue_preview_box: none;
-  --onb_theme_royal_blue_preview_box: none; --onb_theme_moon_dark_preview_box: flex;
+  --onboarding_theme_options_dark_visibility: none; --onboarding_theme_options_light_visibility: flex;
+  --onb_theme_light_preview_box: flex; --onb_theme_calm_blue_preview_box: none;
+  --onb_theme_royal_blue_preview_box: none; --onb_theme_moon_dark_preview_box: none;
   --image_brightness: 100%;
 }
 
-/* Light theme overrides - using Kagi's .theme_light class */
-.theme_light {
-  /* Catppuccin Latte colors */
-  --rosewater: #dc8a78; --flamingo: #dd7878; --pink: #ea76cb; --mauve: #8839ef;
-  --red: #d20f39; --maroon: #e64553; --peach: #fe640b; --yellow: #df8e1d;
-  --green: #40a02b; --teal: #179299; --sky: #04a5e5; --sapphire: #209fb5;
-  --blue: #1e66f5; --lavender: #7287fd; --text: #4c4f69; --subtext1: #5c5f77;
-  --subtext0: #6c6f85; --overlay2: #7c7f93; --overlay1: #8c8fa1; --overlay0: #9ca0b0;
-  --surface2: #acb0be; --surface1: #bcc0cc; --surface0: #ccd0da; --base: #eff1f5;
-  --mantle: #e6e9ef; --crust: #dce0e8;
+/* Dark theme overrides - using Kagi's .theme_moon_dark class */
+.theme_moon_dark {
+  /* Catppuccin Mocha colors */
+  --rosewater: #f5e0dc; --flamingo: #f2cdcd; --pink: #f5c2e7; --mauve: #cba6f7;
+  --red: #f38ba8; --maroon: #eba0ac; --peach: #fab387; --yellow: #f9e2af;
+  --green: #a6e3a1; --teal: #94e2d5; --sky: #89dceb; --sapphire: #74c7ec;
+  --blue: #89b4fa; --lavender: #b4befe; --text: #cdd6f4; --subtext1: #bac2de;
+  --subtext0: #a6adc8; --overlay2: #9399b2; --overlay1: #7f849c; --overlay0: #6c7086;
+  --surface2: #585b70; --surface1: #45475a; --surface0: #313244; --base: #1e1e2e;
+  --mantle: #181825; --crust: #11111b;
 
-  /* Light mode adjustments */
-  --color-scheme: light; --app-bg: var(--base); --app-text: var(--text);
-  --header-bg: var(--crust); --inline-widget-bg: var(--surface0);
-  --inline-widget-hover-bg: var(--surface1); --btn-primary-bg: var(--mauve);
-  --btn-primary-text: var(--crust); --checkbox-bg: var(--mauve); --checkbox-check: var(--crust);
-  --onboarding_theme_options_dark_visibility: none; --onboarding_theme_options_light_visibility: flex;
-  --onb_theme_light_preview_box: flex; --onb_theme_moon_dark_preview_box: none;
-  --k-tooltip-bg: rgba(220, 224, 232, 0.9); --k-tooltip-text: var(--text);
+  /* Dark mode adjustments */
+  --color-scheme: dark; --app-bg: var(--base); --app-text: var(--text);
+  --header-bg: var(--app-bg); --inline-widget-bg: var(--surface0);
+  --inline-widget-hover-bg: var(--surface1); --btn-primary-bg: var(--text);
+  --btn-primary-text: var(--base); --checkbox-bg: var(--yellow); --checkbox-check: var(--base);
+  --onboarding_theme_options_dark_visibility: flex; --onboarding_theme_options_light_visibility: none;
+  --onb_theme_light_preview_box: none; --onb_theme_moon_dark_preview_box: flex;
+  --k-tooltip-bg: rgba(30, 30, 46, .9); --k-tooltip-text: var(--text);
 }
 
-/* System preference override - only applies when no theme class is set */
-@media (prefers-color-scheme: light) {
-  :root:not(.theme_moon_dark):not(.theme_light):not(.theme_calm_blue):not(.theme_royal_blue) {
-    /* Catppuccin Latte colors */
-    --rosewater: #dc8a78; --flamingo: #dd7878; --pink: #ea76cb; --mauve: #8839ef;
-    --red: #d20f39; --maroon: #e64553; --peach: #fe640b; --yellow: #df8e1d;
-    --green: #40a02b; --teal: #179299; --sky: #04a5e5; --sapphire: #209fb5;
-    --blue: #1e66f5; --lavender: #7287fd; --text: #4c4f69; --subtext1: #5c5f77;
-    --subtext0: #6c6f85; --overlay2: #7c7f93; --overlay1: #8c8fa1; --overlay0: #9ca0b0;
-    --surface2: #acb0be; --surface1: #bcc0cc; --surface0: #ccd0da; --base: #eff1f5;
-    --mantle: #e6e9ef; --crust: #dce0e8;
+/* System preference override - only applies to .theme_moon_dark_conditional class */
+@media (prefers-color-scheme: dark) {
+  .theme_moon_dark_conditional {
+    /* Catppuccin Mocha colors */
+    --rosewater: #f5e0dc; --flamingo: #f2cdcd; --pink: #f5c2e7; --mauve: #cba6f7;
+    --red: #f38ba8; --maroon: #eba0ac; --peach: #fab387; --yellow: #f9e2af;
+    --green: #a6e3a1; --teal: #94e2d5; --sky: #89dceb; --sapphire: #74c7ec;
+    --blue: #89b4fa; --lavender: #b4befe; --text: #cdd6f4; --subtext1: #bac2de;
+    --subtext0: #a6adc8; --overlay2: #9399b2; --overlay1: #7f849c; --overlay0: #6c7086;
+    --surface2: #585b70; --surface1: #45475a; --surface0: #313244; --base: #1e1e2e;
+    --mantle: #181825; --crust: #11111b;
 
-    /* Light mode adjustments */
-    --color-scheme: light; --app-bg: var(--base); --app-text: var(--text);
-    --header-bg: var(--crust); --inline-widget-bg: var(--surface0);
-    --inline-widget-hover-bg: var(--surface1); --btn-primary-bg: var(--mauve);
-    --btn-primary-text: var(--crust); --checkbox-bg: var(--mauve); --checkbox-check: var(--crust);
-    --onboarding_theme_options_dark_visibility: none; --onboarding_theme_options_light_visibility: flex;
-    --onb_theme_light_preview_box: flex; --onb_theme_moon_dark_preview_box: none;
-    --k-tooltip-bg: rgba(220, 224, 232, 0.9); --k-tooltip-text: var(--text);
+  /* Dark mode adjustments */
+    --color-scheme: dark; --app-bg: var(--base); --app-text: var(--text);
+    --header-bg: var(--app-bg); --inline-widget-bg: var(--surface0);
+    --inline-widget-hover-bg: var(--surface1); --btn-primary-bg: var(--text);
+    --btn-primary-text: var(--base); --checkbox-bg: var(--yellow); --checkbox-check: var(--base);
+    --onboarding_theme_options_dark_visibility: flex; --onboarding_theme_options_light_visibility: none;
+    --onb_theme_light_preview_box: none; --onb_theme_moon_dark_preview_box: flex;
+    --k-tooltip-bg: rgba(30, 30, 46, .9); --k-tooltip-text: var(--text);
   }
 }
 
