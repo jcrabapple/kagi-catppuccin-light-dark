@@ -143,6 +143,87 @@
   --image_brightness: 100%;
 }
 
+.codehilite {
+  /* Code syntax highlighting colors */
+  --ch-hll: var(--base);
+  --ch-c: var(--overlay2); /* Comment */
+  --ch-err: var(--maroon); /* Error */
+  --ch-esc: var(--maroon); /* ? */
+  --ch-g: var(--maroon); /* Generic ? */
+  --ch-k: var(--mauve); /* Keyword */
+  --ch-l: var(--maroon); /* Label ? */
+  --ch-n: var(--maroon); /* Namespace ? */
+  --ch-o: var(--maroon); /* Operator */
+  --ch-x: var(--maroon); /* ? */
+  --ch-p: var(--maroon); /* ? */
+  --ch-ch: var(--overlay2); /* Comment.Hashbang */
+  --ch-cm: var(--overlay2); /* Comment.Multiline */
+  --ch-cp: var(--red); /* Comment.Preproc */
+  --ch-cpf: var(--overlay2); /* Comment.PreprocFile */
+  --ch-c1: var(--overlay2); /* Comment.Single */
+  --ch-cs: var(--overlay2); /* Comment.Special */
+  --ch-gd: var(--maroon); /* Generic.Deleted */
+  --ch-ge: var(--maroon); /* Generic.Emph */
+  --ch-gr: var(--maroon); /* Generic.Error */
+  --ch-gh: var(--maroon); /* Generic.Heading */
+  --ch-gi: var(--maroon); /* Generic.Inserted */
+  --ch-go: var(--text); /* Generic.Output */
+  --ch-gp: var(--maroon); /* Generic.Prompt */
+  --ch-gs: var(--maroon); /* Generic.Strong */
+  --ch-gu: var(--maroon); /* Generic.Subheading */
+  --ch-gt: var(--maroon); /* Generic.Traceback */
+  --ch-kc: var(--mauve); /* Keyword.Constant */
+  --ch-kd: var(--mauve); /* Keyword.Declaration */
+  --ch-kn: var(--mauve); /* Keyword.Namespace */
+  --ch-kp: var(--mauve); /* Keyword.Pseudo */
+  --ch-kr: var(--mauve); /* Keyword.Reserved */
+  --ch-kt: var(--subtext1); /* Keyword.Type */
+  --ch-ld: var(--maroon); /* Literal.Date */
+  --ch-m: var(--peach); /* Literal.Number */
+  --ch-s: var(--peach); /* Literal.String */
+  --ch-na: var(--maroon); /* Name.Attribute */
+  --ch-nb: var(--blue); /* Name.Builtin */
+  --ch-nc: var(--blue); /* Name.Class */
+  --ch-no: var(--peach); /* Name.Constant */
+  --ch-nd: var(--blue); /* Name.Decorator */ 
+  --ch-ni: var(--blue); /* Name.Entity */
+  --ch-ne: var(--blue); /* Name.Exception */
+  --ch-nf: var(--blue); /* Name.Function */
+  --ch-nl: var(--yellow); /* Name.Label */
+  --ch-nn: var(--maroon); /* Name.Namespace */
+  --ch-nx: var(--blue); /* Name.Other */
+  --ch-py: var(--blue); /* Name.Property */
+  --ch-nt: var(--maroon); /* Name.Tag */
+  --ch-nv: var(--maroon); /* Name.Variable */
+  --ch-ow: var(--maroon); /* Operator.Word */
+  --ch-w: rgba(var(--overlay2), 0.4); /* Whitespace */
+  --ch-mb: var(--peach); /* Literal.Number.Bin */
+  --ch-mf: var(--peach); /* Literal.Number.Float */
+  --ch-mh: var(--peach); /* Literal.Number.Hex */
+  --ch-mi: var(--peach); /* Literal.Number.Integer */
+  --ch-mo: var(--peach); /* Literal.Number.Oct */
+  --ch-sa: var(--peach); /* Literal.String.Affix */
+  --ch-sb: var(--peach); /* Literal.String.Backtick */
+  --ch-sc: var(--peach); /* Literal.String.Char */
+  --ch-dl: var(--peach); /* Literal.String.Delimiter */
+  --ch-sd: var(--peach); /* Literal.String.Doc */
+  --ch-s2: var(--peach); /* Literal.String.Double */
+  --ch-se: var(--peach); /* Literal.String.Escape */
+  --ch-sh: var(--peach); /* Literal.String.Heredoc */
+  --ch-si: var(--peach); /* Literal.String.Interpol */
+  --ch-sx: var(--peach); /* Literal.String.Other */
+  --ch-sr: var(--peach); /* Literal.String.Regex */
+  --ch-s1: var(--peach); /* Literal.String.Single */
+  --ch-ss: var(--peach); /* Literal.String.Symbol */
+  --ch-bp: var(--maroon); /* Name.Builtin.Pseudo */
+  --ch-fm: var(--yellow); /* Name.Function.Magic */
+  --ch-vc: var(--mauve); /* Name.Variable.Class */
+  --ch-vg: var(--mauve); /* Name.Variable.Global */
+  --ch-vi: var(--mauve); /* Name.Variable.Instance */
+  --ch-vm: var(--mauve); /* Name.Variable.Magic */
+  --ch-il: var(--blue); /* Literal.Number.Integer.Long */
+}
+
 /* Dark theme overrides - using Kagi's .theme_moon_dark class */
 .theme_moon_dark {
   /* Catppuccin Mocha colors */
@@ -176,7 +257,7 @@
     --surface2: #585b70; --surface1: #45475a; --surface0: #313244; --base: #1e1e2e;
     --mantle: #181825; --crust: #11111b;
 
-  /* Dark mode adjustments */
+    /* Dark mode adjustments */
     --color-scheme: dark; --app-bg: var(--base); --app-text: var(--text);
     --header-bg: var(--app-bg); --inline-widget-bg: var(--surface0);
     --inline-widget-hover-bg: var(--surface1); --btn-primary-bg: var(--text);
@@ -185,6 +266,188 @@
     --onb_theme_light_preview_box: none; --onb_theme_moon_dark_preview_box: flex;
     --k-tooltip-bg: rgba(30, 30, 46, .9); --k-tooltip-text: var(--text);
   }
+
+  .theme_moon_dark_conditional .codehilite {
+    --rosewater: #f5e0dc; --flamingo: #f2cdcd; --pink: #f5c2e7; --mauve: #cba6f7;
+    --red: #f38ba8; --maroon: #eba0ac; --peach: #fab387; --yellow: #f9e2af;
+    --green: #a6e3a1; --teal: #94e2d5; --sky: #89dceb; --sapphire: #74c7ec;
+    --blue: #89b4fa; --lavender: #b4befe; --text: #cdd6f4; --subtext1: #bac2de;
+    --subtext0: #a6adc8; --overlay2: #9399b2; --overlay1: #7f849c; --overlay0: #6c7086;
+    --surface2: #585b70; --surface1: #45475a; --surface0: #313244; --base: #1e1e2e;
+    --mantle: #181825; --crust: #11111b;
+  
+    /* Code syntax highlighting colors */
+    --color-scheme: dark;
+    --c-err-b: transparent;
+    --ch-hll: var(--base);
+    --ch-c: var(--overlay2); /* Comment */
+    --ch-err: var(--maroon); /* Error */
+    --ch-esc: var(--maroon); /* ? */
+    --ch-g: var(--maroon); /* Generic ? */
+    --ch-k: var(--mauve); /* Keyword */
+    --ch-l: var(--maroon); /* Label ? */
+    --ch-n: var(--maroon); /* Namespace ? */
+    --ch-o: var(--maroon); /* Operator */
+    --ch-x: var(--maroon); /* ? */
+    --ch-p: var(--maroon); /* ? */
+    --ch-ch: var(--overlay2); /* Comment.Hashbang */
+    --ch-cm: var(--overlay2); /* Comment.Multiline */
+    --ch-cp: var(--red); /* Comment.Preproc */
+    --ch-cpf: var(--overlay2); /* Comment.PreprocFile */
+    --ch-c1: var(--overlay2); /* Comment.Single */
+    --ch-cs: var(--overlay2); /* Comment.Special */
+    --ch-gd: var(--maroon); /* Generic.Deleted */
+    --ch-ge: var(--maroon); /* Generic.Emph */
+    --ch-gr: var(--maroon); /* Generic.Error */
+    --ch-gh: var(--maroon); /* Generic.Heading */
+    --ch-gi: var(--maroon); /* Generic.Inserted */
+    --ch-go: var(--text); /* Generic.Output */
+    --ch-gp: var(--maroon); /* Generic.Prompt */
+    --ch-gs: var(--maroon); /* Generic.Strong */
+    --ch-gu: var(--maroon); /* Generic.Subheading */
+    --ch-gt: var(--maroon); /* Generic.Traceback */
+    --ch-kc: var(--mauve); /* Keyword.Constant */
+    --ch-kd: var(--mauve); /* Keyword.Declaration */
+    --ch-kn: var(--mauve); /* Keyword.Namespace */
+    --ch-kp: var(--mauve); /* Keyword.Pseudo */
+    --ch-kr: var(--mauve); /* Keyword.Reserved */
+    --ch-kt: var(--subtext1); /* Keyword.Type */
+    --ch-ld: var(--maroon); /* Literal.Date */
+    --ch-m: var(--peach); /* Literal.Number */
+    --ch-s: var(--peach); /* Literal.String */
+    --ch-na: var(--maroon); /* Name.Attribute */
+    --ch-nb: var(--blue); /* Name.Builtin */
+    --ch-nc: var(--blue); /* Name.Class */
+    --ch-no: var(--peach); /* Name.Constant */
+    --ch-nd: var(--blue); /* Name.Decorator */ 
+    --ch-ni: var(--blue); /* Name.Entity */
+    --ch-ne: var(--blue); /* Name.Exception */
+    --ch-nf: var(--blue); /* Name.Function */
+    --ch-nl: var(--yellow); /* Name.Label */
+    --ch-nn: var(--maroon); /* Name.Namespace */
+    --ch-nx: var(--blue); /* Name.Other */
+    --ch-py: var(--blue); /* Name.Property */
+    --ch-nt: var(--maroon); /* Name.Tag */
+    --ch-nv: var(--maroon); /* Name.Variable */
+    --ch-ow: var(--maroon); /* Operator.Word */
+    --ch-w: rgba(var(--overlay2), 0.4); /* Whitespace */
+    --ch-mb: var(--peach); /* Literal.Number.Bin */
+    --ch-mf: var(--peach); /* Literal.Number.Float */
+    --ch-mh: var(--peach); /* Literal.Number.Hex */
+    --ch-mi: var(--peach); /* Literal.Number.Integer */
+    --ch-mo: var(--peach); /* Literal.Number.Oct */
+    --ch-sa: var(--peach); /* Literal.String.Affix */
+    --ch-sb: var(--peach); /* Literal.String.Backtick */
+    --ch-sc: var(--peach); /* Literal.String.Char */
+    --ch-dl: var(--peach); /* Literal.String.Delimiter */
+    --ch-sd: var(--peach); /* Literal.String.Doc */
+    --ch-s2: var(--peach); /* Literal.String.Double */
+    --ch-se: var(--peach); /* Literal.String.Escape */
+    --ch-sh: var(--peach); /* Literal.String.Heredoc */
+    --ch-si: var(--peach); /* Literal.String.Interpol */
+    --ch-sx: var(--peach); /* Literal.String.Other */
+    --ch-sr: var(--peach); /* Literal.String.Regex */
+    --ch-s1: var(--peach); /* Literal.String.Single */
+    --ch-ss: var(--peach); /* Literal.String.Symbol */
+    --ch-bp: var(--maroon); /* Name.Builtin.Pseudo */
+    --ch-fm: var(--yellow); /* Name.Function.Magic */
+    --ch-vc: var(--mauve); /* Name.Variable.Class */
+    --ch-vg: var(--mauve); /* Name.Variable.Global */
+    --ch-vi: var(--mauve); /* Name.Variable.Instance */
+    --ch-vm: var(--mauve); /* Name.Variable.Magic */
+    --ch-il: var(--blue); /* Literal.Number.Integer.Long */
+  }
+}
+
+.theme_moon_dark .codehilite {
+  --rosewater: #f5e0dc; --flamingo: #f2cdcd; --pink: #f5c2e7; --mauve: #cba6f7;
+  --red: #f38ba8; --maroon: #eba0ac; --peach: #fab387; --yellow: #f9e2af;
+  --green: #a6e3a1; --teal: #94e2d5; --sky: #89dceb; --sapphire: #74c7ec;
+  --blue: #89b4fa; --lavender: #b4befe; --text: #cdd6f4; --subtext1: #bac2de;
+  --subtext0: #a6adc8; --overlay2: #9399b2; --overlay1: #7f849c; --overlay0: #6c7086;
+  --surface2: #585b70; --surface1: #45475a; --surface0: #313244; --base: #1e1e2e;
+  --mantle: #181825; --crust: #11111b;
+
+  /* Code syntax highlighting colors */
+  --color-scheme: dark;
+  --c-err-b: transparent;
+  --ch-hll: var(--base);
+  --ch-c: var(--overlay2); /* Comment */
+  --ch-err: var(--maroon); /* Error */
+  --ch-esc: var(--maroon); /* ? */
+  --ch-g: var(--maroon); /* Generic ? */
+  --ch-k: var(--mauve); /* Keyword */
+  --ch-l: var(--maroon); /* Label ? */
+  --ch-n: var(--maroon); /* Namespace ? */
+  --ch-o: var(--maroon); /* Operator */
+  --ch-x: var(--maroon); /* ? */
+  --ch-p: var(--maroon); /* ? */
+  --ch-ch: var(--overlay2); /* Comment.Hashbang */
+  --ch-cm: var(--overlay2); /* Comment.Multiline */
+  --ch-cp: var(--red); /* Comment.Preproc */
+  --ch-cpf: var(--overlay2); /* Comment.PreprocFile */
+  --ch-c1: var(--overlay2); /* Comment.Single */
+  --ch-cs: var(--overlay2); /* Comment.Special */
+  --ch-gd: var(--maroon); /* Generic.Deleted */
+  --ch-ge: var(--maroon); /* Generic.Emph */
+  --ch-gr: var(--maroon); /* Generic.Error */
+  --ch-gh: var(--maroon); /* Generic.Heading */
+  --ch-gi: var(--maroon); /* Generic.Inserted */
+  --ch-go: var(--text); /* Generic.Output */
+  --ch-gp: var(--maroon); /* Generic.Prompt */
+  --ch-gs: var(--maroon); /* Generic.Strong */
+  --ch-gu: var(--maroon); /* Generic.Subheading */
+  --ch-gt: var(--maroon); /* Generic.Traceback */
+  --ch-kc: var(--mauve); /* Keyword.Constant */
+  --ch-kd: var(--mauve); /* Keyword.Declaration */
+  --ch-kn: var(--mauve); /* Keyword.Namespace */
+  --ch-kp: var(--mauve); /* Keyword.Pseudo */
+  --ch-kr: var(--mauve); /* Keyword.Reserved */
+  --ch-kt: var(--subtext1); /* Keyword.Type */
+  --ch-ld: var(--maroon); /* Literal.Date */
+  --ch-m: var(--peach); /* Literal.Number */
+  --ch-s: var(--peach); /* Literal.String */
+  --ch-na: var(--maroon); /* Name.Attribute */
+  --ch-nb: var(--blue); /* Name.Builtin */
+  --ch-nc: var(--blue); /* Name.Class */
+  --ch-no: var(--peach); /* Name.Constant */
+  --ch-nd: var(--blue); /* Name.Decorator */ 
+  --ch-ni: var(--blue); /* Name.Entity */
+  --ch-ne: var(--blue); /* Name.Exception */
+  --ch-nf: var(--blue); /* Name.Function */
+  --ch-nl: var(--yellow); /* Name.Label */
+  --ch-nn: var(--maroon); /* Name.Namespace */
+  --ch-nx: var(--blue); /* Name.Other */
+  --ch-py: var(--blue); /* Name.Property */
+  --ch-nt: var(--maroon); /* Name.Tag */
+  --ch-nv: var(--maroon); /* Name.Variable */
+  --ch-ow: var(--maroon); /* Operator.Word */
+  --ch-w: rgba(var(--overlay2), 0.4); /* Whitespace */
+  --ch-mb: var(--peach); /* Literal.Number.Bin */
+  --ch-mf: var(--peach); /* Literal.Number.Float */
+  --ch-mh: var(--peach); /* Literal.Number.Hex */
+  --ch-mi: var(--peach); /* Literal.Number.Integer */
+  --ch-mo: var(--peach); /* Literal.Number.Oct */
+  --ch-sa: var(--peach); /* Literal.String.Affix */
+  --ch-sb: var(--peach); /* Literal.String.Backtick */
+  --ch-sc: var(--peach); /* Literal.String.Char */
+  --ch-dl: var(--peach); /* Literal.String.Delimiter */
+  --ch-sd: var(--peach); /* Literal.String.Doc */
+  --ch-s2: var(--peach); /* Literal.String.Double */
+  --ch-se: var(--peach); /* Literal.String.Escape */
+  --ch-sh: var(--peach); /* Literal.String.Heredoc */
+  --ch-si: var(--peach); /* Literal.String.Interpol */
+  --ch-sx: var(--peach); /* Literal.String.Other */
+  --ch-sr: var(--peach); /* Literal.String.Regex */
+  --ch-s1: var(--peach); /* Literal.String.Single */
+  --ch-ss: var(--peach); /* Literal.String.Symbol */
+  --ch-bp: var(--maroon); /* Name.Builtin.Pseudo */
+  --ch-fm: var(--yellow); /* Name.Function.Magic */
+  --ch-vc: var(--mauve); /* Name.Variable.Class */
+  --ch-vg: var(--mauve); /* Name.Variable.Global */
+  --ch-vi: var(--mauve); /* Name.Variable.Instance */
+  --ch-vm: var(--mauve); /* Name.Variable.Magic */
+  --ch-il: var(--blue); /* Literal.Number.Integer.Long */
 }
 
 /* Base styles */
