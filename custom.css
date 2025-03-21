@@ -185,6 +185,25 @@
     --onb_theme_light_preview_box: none; --onb_theme_moon_dark_preview_box: flex;
     --k-tooltip-bg: rgba(30, 30, 46, .9); --k-tooltip-text: var(--text);
   }
+  .k_ui_toggle_switch input:checked~.k_ui_toggle_switch_bar:after {
+    background-color: var(--surface0);
+    border-color: var(--surface1);
+}
+  .k_ui_toggle_switch input:checked~.k_ui_toggle_switch_bar {
+    background: var(--green);
+    border-color: var(--primary-25);
+}
+.tag-selector:hover {
+    background: var(--surface1);
+}
+@media all and (min-device-width: 766px) {
+  form#form {
+    margin: 0;
+    border: 1px var(--peach) solid;
+    border-radius: 35px;
+    padding: 12px 20px;
+}
+}
 }
 
 /* Base styles */
@@ -206,14 +225,6 @@ span.__domain-name, .widget-simple .__domain-name, .bg-p-50 { background-color: 
 /* Toggle switches */
 .k_ui_toggle_switch.--enabled .k_ui_toggle_switch_bar { background: var(--primary-g-6); }
 .k_ui_toggle_switch.--mini .k_ui_toggle_switch_bar { --border-color: var(--primary-g-6); }
-.k_ui_toggle_switch input:checked~.k_ui_toggle_switch_bar:after {
-    background-color: var(--surface0);
-    border-color: var(--surface1);
-}
-.k_ui_toggle_switch input:checked~.k_ui_toggle_switch_bar {
-    background: var(--green);
-    border-color: var(--primary-25);
-}
 
 /* Tooltips and focus states */
 .k-tooltip { background-color: var(--primary-100); }
@@ -282,7 +293,7 @@ header .header-btn:hover { color: var(--crust); }
 
 .chat_bubble {
   padding-block: 32px; position: relative; border: 2px solid var(--overlay0);
-  border-radius: 25px; margin-top: 25px; padding: 20px; background-color: var(--crust);
+  border-radius: 25px; margin-top: 25px; margin-bottom: 10px; padding: 20px; background-color: var(--crust);
 }
 
 .chat_bubble:focus-within:before, .chat_bubble:hover:before { background-color: unset !important; }
@@ -299,7 +310,7 @@ header .header-btn:hover { color: var(--crust); }
   padding: 2px 5px; border-radius: 4px;
 }
 
-#prompt-box { border-top: 2px solid var(--peach); }
+#prompt-box:before { border-top: 2px solid var(--peach); }
 #dictation-button:hover { color: var(--crust); }
 
 /* Form elements */
@@ -327,6 +338,17 @@ input[type="date"] { color: var(--primary-600) !important; }
 /* Optional: disable underline on title links */
 .__sri-title .__sri_title_link { border-bottom: none; }
 
+/* Desktop / Widescreen styles */
+@media (min-width: 1280px) {
+:root {
+    --sidebar-width: 550px;
+  }
+
+  .sidebar-box > .threads-pane {
+    min-width: 350px;
+  }
+}
+
 /* Mobile styles */
 @media all and (max-device-width: 766px) {
   .bg-p-50 { background-color: var(--surface0); }
@@ -341,13 +363,9 @@ input[type="date"] { color: var(--primary-600) !important; }
     border: none; color: var(--primary); font-size: .875rem; height: 47px;
     margin: 0; min-width: unset !important; padding: 0 8px; position: relative;
   }
-
-@media (max-width: 1023.98px) {
-    #thread-sidebar-visible:checked~#sidebar-backdrop {
-        background-color: unset !important;
-        }
-    }
-
+  #thread-sidebar-visible:checked~#sidebar-backdrop {
+    background-color: unset !important;
+  }
   
   /* Navigation styles for mobile */
   .landing_cat_buttons {
