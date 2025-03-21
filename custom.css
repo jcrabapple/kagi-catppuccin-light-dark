@@ -215,6 +215,10 @@ span.__domain-name, .widget-simple .__domain-name, .bg-p-50 { background-color: 
 div.sidebar-box { background-color: var(--mantle) !important; }
 .thread-list > li:is(.active, :hover, :focus-within) { background-color: var(--surface1) !important; }
 #thread-sidebar-collapse:hover { color: var(--crust); }
+.threads-pane .header { background: none !important; }
+.sidebar-box>.tags-pane { background: none !important; }
+.tag-selector:has(:checked) { background: var(--surface1) !important; }
+@media (min-width: 1280px) { .sidebar-box>.threads-pane { min-width: 200px; } }
 
 /* Header & Navigation */
 header { background: var(--crust) !important; }
