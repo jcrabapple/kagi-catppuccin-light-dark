@@ -80,7 +80,6 @@
   --secondary: var(--base); --app-sidebar-item-border: rgba(255, 255, 255, .2);
   --app-sidebar-link: rgba(255, 255, 255, .6); --app-sidebar-nav-item-bg_hover: var(--yellow);
   --app-sidebar-nav-item-icon_hover: var(--base);
-  --sidebar-width: 300px;
   
   /* Search results */
   --result-item-title-border: var(--peach); --result-item-title-border_hover: var(--primary-hover);
