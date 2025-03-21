@@ -80,6 +80,7 @@
   --secondary: var(--base); --app-sidebar-item-border: rgba(255, 255, 255, .2);
   --app-sidebar-link: rgba(255, 255, 255, .6); --app-sidebar-nav-item-bg_hover: var(--yellow);
   --app-sidebar-nav-item-icon_hover: var(--base);
+  --sidebar-width: 300px;
   
   /* Search results */
   --result-item-title-border: var(--peach); --result-item-title-border_hover: var(--primary-hover);
@@ -206,6 +207,14 @@ span.__domain-name, .widget-simple .__domain-name, .bg-p-50 { background-color: 
 /* Toggle switches */
 .k_ui_toggle_switch.--enabled .k_ui_toggle_switch_bar { background: var(--primary-g-6); }
 .k_ui_toggle_switch.--mini .k_ui_toggle_switch_bar { --border-color: var(--primary-g-6); }
+.k_ui_toggle_switch input:checked~.k_ui_toggle_switch_bar:after {
+    background-color: var(--surface0);
+    border-color: var(--surface1);
+}
+.k_ui_toggle_switch input:checked~.k_ui_toggle_switch_bar {
+    background: var(--green);
+    border-color: var(--primary-25);
+}
 
 /* Tooltips and focus states */
 .k-tooltip { background-color: var(--primary-100); }
@@ -218,7 +227,6 @@ div.sidebar-box { background-color: var(--mantle) !important; }
 .threads-pane .header { background: none !important; }
 .sidebar-box>.tags-pane { background: none !important; }
 .tag-selector:has(:checked) { background: var(--surface1) !important; }
-@media (min-width: 1280px) { .sidebar-box>.threads-pane { min-width: 200px; } }
 
 /* Header & Navigation */
 header { background: var(--crust) !important; }
@@ -334,6 +342,13 @@ input[type="date"] { color: var(--primary-600) !important; }
     border: none; color: var(--primary); font-size: .875rem; height: 47px;
     margin: 0; min-width: unset !important; padding: 0 8px; position: relative;
   }
+
+@media (max-width: 1023.98px) {
+    #thread-sidebar-visible:checked~#sidebar-backdrop {
+        background-color: unset !important;
+        }
+    }
+
   
   /* Navigation styles for mobile */
   .landing_cat_buttons {
