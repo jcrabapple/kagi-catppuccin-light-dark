@@ -338,7 +338,7 @@ input[type="date"] { color: var(--primary-600) !important; }
 /* Optional: disable underline on title links */
 .__sri-title .__sri_title_link { border-bottom: none; }
 
-.chat_bubble:focus-within:before, .chat_bubble:hover:before, #thread-sidebar-visible:checked~#sidebar-backdrop, .quick-settings, .quick-settings-footer, .promptOptionsSelector, .promptOptionsSelector .search-bar, .k_ui_dropdown_data_list, ._0_more_search_box, .dropdown .dd-list, .chat_bubble .actions, .citation { 
+#thread-sidebar-visible:checked~#sidebar-backdrop, .quick-settings, .quick-settings-footer, .promptOptionsSelector, .promptOptionsSelector .search-bar, .k_ui_dropdown_data_list, ._0_more_search_box, .dropdown .dd-list, .chat_bubble .actions, .citation { 
 background-color: var(--crust) !important;
 }
 
