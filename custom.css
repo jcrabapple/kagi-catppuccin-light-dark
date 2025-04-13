@@ -342,6 +342,10 @@ input[type="date"] { color: var(--primary-600) !important; }
 background-color: var(--crust) !important;
 }
 
+.team_badge {
+  color: var(--crust);
+}
+
 /* Desktop / Widescreen styles */
 @media (min-width: 1280px) {
 :root {
