@@ -122,7 +122,7 @@
   --doggo-color-1: var(--text); --doggo-bg-color: var(--app-bg); --doggo-stroke-color: var(--maroon);
   --landing-page-clouds-opacity: 1; --quick-search-bg: var(--text); --quick-search-icon: var(--base);
   --app-logo: var(--text); --app-logo-bg: var(--yellow); --filters-clear-btn-icon: var(--maroon);
-  --filter-dd-bg: var(--surface2); --k-tooltip-bg: rgba(220, 224, 232, 0.9);
+  --filter-dd-bg: var(--surface2); --k-tooltip-bg: var(--background-color-sky);
   --k-tooltip-text: var(--text); --dd-hover-bg: var(--mauve); --dd-hover-color: var(--text);
   --dd-list-input-bg: var(--input-bg); --not-found-bubble-bg: var(--surface1);
   --site_info_bg: var(--app-bg); --site_info_bottom_bg: var(--kagi-accent);
@@ -161,7 +161,7 @@
   --btn-primary-text: var(--base); --checkbox-bg: var(--yellow); --checkbox-check: var(--base);
   --onboarding_theme_options_dark_visibility: flex; --onboarding_theme_options_light_visibility: none;
   --onb_theme_light_preview_box: none; --onb_theme_moon_dark_preview_box: flex;
-  --k-tooltip-bg: rgba(30, 30, 46, .9); --k-tooltip-text: var(--text);
+  --k-tooltip-bg: var(--background-color-sky); --k-tooltip-text: var(--text);
 }
 
 /* System preference override - only applies to .theme_moon_dark_conditional class */
@@ -183,7 +183,7 @@
     --btn-primary-text: var(--base); --checkbox-bg: var(--yellow); --checkbox-check: var(--base);
     --onboarding_theme_options_dark_visibility: flex; --onboarding_theme_options_light_visibility: none;
     --onb_theme_light_preview_box: none; --onb_theme_moon_dark_preview_box: flex;
-    --k-tooltip-bg: rgba(30, 30, 46, .9); --k-tooltip-text: var(--text);
+    --k-tooltip-bg: var(--background-color-sky); --k-tooltip-text: var(--text);
   }
   .k_ui_toggle_switch input:checked~.k_ui_toggle_switch_bar:after {
     background-color: var(--surface0);
