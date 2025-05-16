@@ -143,30 +143,8 @@
   --image_brightness: 100%;
 }
 
-/* Dark theme overrides - using Kagi's .theme_moon_dark class */
-.theme_moon_dark {
-  /* Catppuccin Mocha colors */
-  --rosewater: #f5e0dc; --flamingo: #f2cdcd; --pink: #f5c2e7; --mauve: #cba6f7;
-  --red: #f38ba8; --maroon: #eba0ac; --peach: #fab387; --yellow: #f9e2af;
-  --green: #a6e3a1; --teal: #94e2d5; --sky: #89dceb; --sapphire: #74c7ec;
-  --blue: #89b4fa; --lavender: #b4befe; --text: #cdd6f4; --subtext1: #bac2de;
-  --subtext0: #a6adc8; --overlay2: #9399b2; --overlay1: #7f849c; --overlay0: #6c7086;
-  --surface2: #585b70; --surface1: #45475a; --surface0: #313244; --base: #1e1e2e;
-  --mantle: #181825; --crust: #11111b;
-
-  /* Dark mode adjustments */
-  --color-scheme: dark; --app-bg: var(--base); --app-text: var(--text);
-  --header-bg: var(--app-bg); --inline-widget-bg: var(--surface0);
-  --inline-widget-hover-bg: var(--surface1); --btn-primary-bg: var(--text);
-  --btn-primary-text: var(--base); --checkbox-bg: var(--yellow); --checkbox-check: var(--base);
-  --onboarding_theme_options_dark_visibility: flex; --onboarding_theme_options_light_visibility: none;
-  --onb_theme_light_preview_box: none; --onb_theme_moon_dark_preview_box: flex;
-  --k-tooltip-bg: var(--background-color-sky); --k-tooltip-text: var(--text);
-}
-
-/* System preference override - only applies to .theme_moon_dark_conditional class */
 @media (prefers-color-scheme: dark) {
-  .theme_moon_dark_conditional {
+  .theme_moon_dark_conditional, .theme_moon_dark, .theme_dark {
     /* Catppuccin Mocha colors */
     --rosewater: #f5e0dc; --flamingo: #f2cdcd; --pink: #f5c2e7; --mauve: #cba6f7;
     --red: #f38ba8; --maroon: #eba0ac; --peach: #fab387; --yellow: #f9e2af;
@@ -195,6 +173,12 @@
 }
 .tag-selector:hover {
     background: var(--surface1);
+}
+.advanced-search-modal-backdrop:before {
+    background-color: unset;
+}
+.advanced-search-modal {
+    background-color: var(--crust);
 }
 @media all and (min-device-width: 766px) {
   form#form {
