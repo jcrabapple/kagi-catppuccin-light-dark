@@ -339,13 +339,9 @@ background-color: var(--crust) !important;
 
 /* Desktop / Widescreen styles */
 @media (min-width: 1280px) {
-:root {
-    --sidebar-width: 550px;
-  }
-
-  .sidebar-box > .threads-pane {
-    min-width: 350px;
-  }
+#promptBox:placeholder-shown+.rich-placeholder {
+  padding-left: 25px;
+}
 }
 
 /* Mobile styles */
