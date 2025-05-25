@@ -321,7 +321,7 @@ input[type="date"] { color: var(--primary-600) !important; }
 .ranked-box-wrapper, .d-info-body {
   background-color: var(--surface0);
 }
-.k-ui-tooltip, ._0_img-results .item .ai-generated-badge .ai-info {
+.k-ui-tooltip, ._0_img-results .item .ai-generated-badge .ai-info, .tooltip_base {
   color: var(--surface0);
 }
 
