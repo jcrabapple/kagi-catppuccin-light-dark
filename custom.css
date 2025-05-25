@@ -180,7 +180,7 @@
 .advanced-search-modal {
     background-color: var(--crust);
 }
-.ranked-box-wrapper, .d-info-body {
+.ranked-box-wrapper, .d-info-body, dialog {
   background-color: var(--surface0);
 }
 .k-ui-tooltip, ._0_img-results .item .ai-generated-badge .ai-info, .tooltip_base, p.m-0 {
