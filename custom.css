@@ -183,7 +183,7 @@
 .ranked-box-wrapper, .d-info-body {
   background-color: var(--surface0);
 }
-.k-ui-tooltip, ._0_img-results .item .ai-generated-badge .ai-info, .tooltip_base {
+.k-ui-tooltip, ._0_img-results .item .ai-generated-badge .ai-info, .tooltip_base, p.m-0 {
   color: var(--surface0);
 }
 @media all and (min-device-width: 766px) {
