@@ -318,6 +318,12 @@ input[type="date"] { color: var(--primary-600) !important; }
   margin-inline: auto; max-width: 850px;
   padding-inline: 16px; width: 100%;
 }
+.ranked-box-wrapper, .d-info-body {
+  background-color: var(--surface0);
+}
+.k-ui-tooltip {
+  color: var(--surface0);
+}
 
 /* Optional: disable underline on title links */
 .__sri-title .__sri_title_link { border-bottom: none; }
