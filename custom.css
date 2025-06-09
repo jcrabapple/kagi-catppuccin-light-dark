@@ -193,6 +193,9 @@
     display: flex;
     padding: 4px;
   }
+    .chat_bubble .actions .left {
+    display: unset !important;
+    }
   }
 @media all and (min-device-width: 766px) {
   form#form {
