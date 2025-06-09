@@ -211,6 +211,7 @@ span.domain, #chat_box .chat_bubble .sources .domain {
   padding: 2px 4px !important; border-radius: 3px !important;
 }
 span.__domain-name, .widget-simple .__domain-name, .bg-p-50 { background-color: var(--surface0) !important; }
+.d-info-section-desc, .d-info-section, .ranked-box-wrapper, .d-info-body { color: black; }
 
 /* Toggle switches */
 .k_ui_toggle_switch.--enabled .k_ui_toggle_switch_bar { background: var(--primary-g-6); }
