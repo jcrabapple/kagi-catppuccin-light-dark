@@ -193,9 +193,6 @@
     display: flex;
     padding: 4px;
   }
-    .chat_bubble .actions .left {
-    display: unset !important;
-    }
   }
 @media all and (min-device-width: 766px) {
   form#form {
@@ -373,6 +370,9 @@ background-color: var(--crust) !important;
   #thread-sidebar-visible:checked~#sidebar-backdrop {
     background-color: unset !important;
   }
+  .chat_bubble .actions .left {
+    display: unset !important;
+    }
   
   /* Navigation styles for mobile */
   .landing_cat_buttons {
