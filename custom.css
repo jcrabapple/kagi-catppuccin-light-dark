@@ -186,14 +186,6 @@
 .k-ui-tooltip, ._0_img-results .item .ai-generated-badge .ai-info, .tooltip_base, p.m-0 {
   color: var(--surface0);
 }
-@media (max-device-width: 766px) {
-  .chat_bubble .actions a, .chat_bubble .actions button {
-    border-radius: 50%;
-    color: var(--primary-600);
-    display: flex;
-    padding: 4px;
-  }
-  }
 @media all and (min-device-width: 766px) {
   form#form {
     margin: 0;
@@ -369,6 +361,12 @@ background-color: var(--crust) !important;
   }
   #thread-sidebar-visible:checked~#sidebar-backdrop {
     background-color: unset !important;
+  }
+  .chat_bubble .actions a, .chat_bubble .actions button {
+    border-radius: 50%;
+    color: var(--primary-600);
+    display: flex;
+    padding: 4px;
   }
   .chat_bubble .actions .left {
     display: unset !important;
