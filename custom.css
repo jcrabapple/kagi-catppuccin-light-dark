@@ -346,7 +346,7 @@ background-color: var(--crust) !important;
 }
 
 /* Mobile styles */
-@media (max-width: 767.98px) {
+@media all and (max-device-width: 767.98px) {
     .chat_bubble .actions {
         justify-content: space-between;
         margin: 8px -4px 0;
