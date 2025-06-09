@@ -346,19 +346,6 @@ background-color: var(--crust) !important;
 }
 
 /* Mobile styles */
-@media all and (max-device-width: 767.98px) {
-    .chat_bubble .actions {
-        justify-content: space-between;
-        margin: 8px -4px 0;
-        border-radius: 50%;
-        color: var(--primary-600);
-        display: flex;
-        padding: 4px;
-    }
-  .chat_bubble .actions .left {
-    display: unset !important;
-    }
-}
 @media all and (max-device-width: 766px) {
   .bg-p-50 { background-color: var(--surface0); }
   
@@ -375,7 +362,16 @@ background-color: var(--crust) !important;
   #thread-sidebar-visible:checked~#sidebar-backdrop {
     background-color: unset !important;
   }
-
+  .chat_bubble .actions, .editing .actions {
+    border-radius: 10%;
+    color: var(--primary-600);
+    display: flex;
+    padding: 4px;
+  }
+  .chat_bubble .actions .left {
+    display: none !important;
+  }
+  
   /* Navigation styles for mobile */
   .landing_cat_buttons {
     border-bottom: none !important; display: flex;
