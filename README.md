@@ -2,7 +2,11 @@
 
 Copy and paste the contents of custom.css into the Custom CSS box in your Kagi appearance settings.
 
-Set your dark theme to Kagi Dark (default).
+Set your theme colors in Kagi appearance settings to:
+- #e5e9f0
+- #2e3440
+
+![image](https://github.com/user-attachments/assets/250f434c-3000-4789-82f7-a15f485a2fc1)
 
 If you enjoy this theme and would like to buy me a coffee, you can do so via my [Kofi page](https://ko-fi.com/jcrabapple).
 
