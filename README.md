@@ -1,5 +1,7 @@
 # Kagi Catppuccin Light/Dark Theme
 
+![Screenshot](Screenshot%202024-12-24%20at%2010-38-52%20Kagi%20Search.png)
+
 Copy and paste the contents of custom.css into the Custom CSS box in your Kagi appearance settings.
 
 Set your theme colors in Kagi appearance settings to:
