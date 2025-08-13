@@ -353,7 +353,11 @@
     background-color: var(--crust);
   }
 
-  .promptOptionsSelector .default-assistants li.option:hover, .promptOptionsSelector .recommended-assistants li.option[aria-selected="true"], .promptOptionsSelector .default-assistants li.option[aria-selected="true"] {
+#tags .untagged {
+  background: var(--ai_chat_buble_a_bg);
+}
+
+  .promptOptionsSelector .default-assistants li.option:hover, .promptOptionsSelector .recommended-assistants li.option:hover, .promptOptionsSelector .recommended-assistants li.option[aria-selected="true"], .promptOptionsSelector .default-assistants li.option[aria-selected="true"], .promptOptionsSelector .default-assistants li.option.info-show:hover {
   background-color: var(--ai_chat_buble_a_bg);
   }
 
@@ -400,7 +404,7 @@ body {
 
 #tags > .tag,
 #tags > .untagged {
-  color: var(--crust);
+  color: var(--text);
 }
 
 #tags #tags-add {
@@ -413,6 +417,10 @@ body {
 
 .promptOptionsSelector .custom-assistants {
   background: unset;
+}
+
+header .header-btn:hover {
+  background-color: var(--background-color-sky);
 }
 
 .new-tooltip.dia-tooltip a {
