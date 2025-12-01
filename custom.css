@@ -370,6 +370,16 @@
     margin-top: 18px;
 }
 
+.chat_bubble ol[data-ref-list] .contribution {
+    border: 1px solid var(--primary-100);
+    border-radius: 4px;
+    color: var(--base);
+    font-size: .75rem;
+    line-height: 1.25rem;
+    padding: 0 8px;
+    background-color: var(--overlay2) !important;
+}
+
   .k-ui-tooltip,
   ._0_img-results .item .ai-generated-badge .ai-info,
   .tooltip_base,
@@ -430,6 +440,15 @@ body {
 
 .promptOptionsSelector .custom-assistants {
   background: unset;
+}
+
+.chat_bubble .content sup:hover>a {
+    background: var(--primary-hover);
+    color: var(--base);
+}
+
+.tooltip_base {
+    color: var(--base) !important;
 }
 
 header .header-btn:hover {
