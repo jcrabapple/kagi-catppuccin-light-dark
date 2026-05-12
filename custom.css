@@ -800,6 +800,9 @@ input[type=date] {
     max-width: 300px;
     width: unset;
   }
+  .app-content-box { /* the element was header.app-header.app-content-box */
+  max-width: none;
+  }
 }
 
 @media all and (max-device-width: 766px) {
