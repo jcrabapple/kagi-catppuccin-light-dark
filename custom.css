@@ -474,8 +474,8 @@ dialog {
 }
 
 .citation:hover {
-  background-color: var(--mauve) !important;
-  color: var(--base) !important;
+  background-color: var(--base) !important;
+  color: unset !important;
 }
 
 .qa-container-box sup {
@@ -484,13 +484,13 @@ dialog {
 
 #chat_box .chat_bubble .content sup.trigger {
   background-color: var(--surface2) !important;
-  color: var(--text) !important;
+  color: var(--base) !important;
   border-radius: 4px;
   padding: 2px 6px;
   top: -0.5em;
 }
 #chat_box .chat_bubble .content sup.trigger a {
-  color: var(--text) !important;
+  color: var(--base) !important;
   text-decoration: none !important;
 }
 #chat_box .chat_bubble .content sup.trigger:hover {
