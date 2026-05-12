@@ -863,3 +863,6 @@ input[type=date] {
     top: 85px;
   }
 }
+circle.clock {
+  fill: rgb(150, 120, 120);
+}
